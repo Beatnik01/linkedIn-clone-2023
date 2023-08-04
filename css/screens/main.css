@@ -146,6 +146,8 @@ main {
   justify-content: flex-start;
   align-items: center;
   margin-left: 20px;
+  margin-bottom: 20px;
+  animation: 2s lineUp ease-out;
 }
 
 .highlights-section__cover {
@@ -174,11 +176,24 @@ main {
   color: rgba(0, 0, 0, 0.5);
 }
 
-hr {
-  text-align: right;
-  width: 300px;
-}
-
 .highlights-section__text__title-sm {
   color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

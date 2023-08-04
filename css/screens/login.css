@@ -51,20 +51,7 @@
   font-size: 17px;
 }
 
-@keyframes clickThis {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
-
 .register {
-  animation: clickThis 1s ease-in-out infinite;
 }
 
 .register-google {

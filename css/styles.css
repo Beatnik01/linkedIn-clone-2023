@@ -8,6 +8,7 @@
 /* Screens */
 @import "screens/login.css";
 @import "screens/main.css";
+@import "screens/connections.css";
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -15,7 +16,12 @@ body {
 }
 
 .green {
-  color: #4cc70a;
+  color: var(--green);
+}
+
+.blue {
+  color: var(--blue);
+  font-weight: 600;
 }
 
 .status-bar {
