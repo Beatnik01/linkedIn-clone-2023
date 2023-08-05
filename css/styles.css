@@ -9,6 +9,7 @@
 @import "screens/login.css";
 @import "screens/main.css";
 @import "screens/connections.css";
+@import "screens/chat.css";
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

@@ -39,7 +39,7 @@
 }
 
 .manage-network__btns i {
-  font-size: 20px;
+  font-size: 35px;
   margin: 10px 10px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .add-personal-contacts__title i {
-  font-size: 40px;
+  font-size: 60px;
   margin-right: 10px;
   color: var(--green);
 }
@@ -104,5 +104,94 @@
   background-color: white;
   color: var(--blue);
   border: 2px solid var(--blue);
+  border-radius: 10px;
+}
+
+.popular-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 480px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.popular-pages__title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.popular-pages__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.popular-pages__items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 2px 2px 2px;
+  border-radius: 5px;
+  width: 145px;
+  height: 145px;
+  margin: 5px 5px;
+}
+
+.popular-pages__items__header {
+  height: 30%;
+}
+
+.popular-pages__items__header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular-pages__items__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular-pages__items__cover {
+  position: absolute;
+  top: 5px;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+}
+
+.popular-pages__items__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.popular-pages__items__followers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-pages__items__followers span {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+.popular-pages__items__followers button {
+  background-color: white;
+  color: var(--blue);
+  border: 1px solid var(--blue);
   border-radius: 10px;
 }

@@ -22,78 +22,106 @@
     </div>
 
     <main>
-      <section class="user-section">
-        <div class="user-section__profile">
-          <img
-            src="https://static.wikia.nocookie.net/ricksanchez/images/6/6e/Ethan.PNG/revision/latest?cb=20160605180043"
-            alt="profile"
-          />
+      <div class="post-input">
+        <div class="post-input__tap">
+          <div class="post-input__reco" id="post-input__reco">
+            <span>Recomendation</span>
+          </div>
+          <div class="post-input__following" id="post-input__following">
+            <span>Following</span>
+          </div>
         </div>
-        <div class="user-section__info">
-          <span class="user-section__name">Jonathan Gunnells</span>
-          <span class="user-section__company"
-            >🚀 Director of Project Management at GoldenPahse Solar</span
-          >
-          <span class="user-section__address1"
-            >University of Ottawa • New York</span
-          >
-          <span class="user-section__address2"
-            >Greater San Diego Area • 462+
-            <i class="fa-solid fa-users" style="color: var(--green)"></i
-          ></span>
-        </div>
-        <div class="user-section__btns">
-          <button type="button">Message</button>
-          <button type="button">Connect</button>
-        </div>
-      </section>
 
-      <section class="viewer-section">
-        <div class="viewer-section__watched">
-          <span>3,200</span>
-          <span>Who's viewed your profile</span>
-        </div>
-        <div class="viewer-section__update">
-          <span>2,453</span>
-          <span>Views on your update</span>
-        </div>
-      </section>
-
-      <section class="highlights-section">
-        <span class="highlights-section__title">✨Highlights✨</span>
-        <div class="highlights-section__column">
-          <div class="highlights-section__cover">
-            <img
-              src="https://static.wikia.nocookie.net/rickandmorty/images/0/01/Annie.png/revision/latest?cb=20160923152636"
+        <form class="message-tap">
+          <div class="message-tap__input-group">
+            <div class="message-tap__user-image">
+              <img
+                src="https://static.wikia.nocookie.net/ricksanchez/images/6/6e/Ethan.PNG/revision/latest?cb=20160605180043"
+                alt="profile"
+              />
+            </div>
+            <input
+              type="input"
+              class="message-tap__input"
+              placeholder="What's happening?"
             />
           </div>
-          <div class="highlights-section__text">
-            <div class="highlights-section__text__title">
-              <span>1 Mutual Connection</span>
+          <div class="message-tap__bottom">
+            <div class="message-tap__btns">
+              <i class="fa-regular fa-image"></i>
+              <i class="fa-regular fa-face-smile"></i>
+              <i class="fa-solid fa-list-check"></i>
+              <i class="fa-regular fa-calendar"></i>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
-            <div class="highlights-section__text__content">
-              <span>You and Marian both know Liz Miller.</span>
-            </div>
+            <button class="message-tap_submit">Post</button>
           </div>
-        </div>
+        </form>
+      </div>
 
-        <div class="highlights-section__column">
-          <div class="highlights-section__cover">
-            <img src="https://static.tvtropes.org/pmwiki/pub/images/251.jpeg" />
-          </div>
-          <div class="highlights-section__text">
-            <div class="highlights-section__text__title">
-              <span>Marian </span
-              ><span class="highlights-section__text__title-sm"
-                >can introduce you to 5 people</span
-              >
+      <div class="post-list">
+        <div class="post-list-posted">
+          <div class="post-list-profile">
+            <div class="post-list-profile__image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYb2DH2_2bn2JIb2A4R2IxD4uztFhYkdI0kg&usqp=CAU"
+              />
             </div>
-            <div class="highlights-section__text__content">
-              You and Marian both know Liz Miller.
+
+            <div class="post-list-profile__info">
+              <span>Rick Sanchez</span>
+              <span>Tinkerer of Terror</span>
+              <span>1mins</span>
+            </div>
+
+            <div class="post-list-profile__ellipsis">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <div class="post-list-content">
+            <div class="post-list-content__image">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNDk5ZDM2MTYtYTVmZC00OGQ0LTg1M2EtNzA3ZDMxMjM0MTAxXkEyXkFqcGdeQXVyNjgzNDU2ODI@._V1_.jpg"
+              />
+            </div>
+            <div class="post-list-content__text">
+              This natural environment is truly sacred. I feel like I am one
+              with myself, the universe, and the environment while using the
+              bathroom here. I am very grateful, I was inspired by this natural
+              environment while using the bathroom. I vowed to live harder and
+              achieve more in the future.
+            </div>
+            <div class="post-list-content__count">
+              <span class="post_list-content__likes">29 Likes</span>
+              <span>•</span>
+              <span class="post-list-content__comments">12 Comments</span>
+            </div>
+          </div>
+          <div class="post-list-btns">
+            <div class="post-list-btns__btn">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span>Like</span>
+            </div>
+            <div class="post-list-btns__btn">
+              <i class="fa-regular fa-comment"></i>
+              <span>Comment</span>
+            </div>
+            <div class="post-list-btns__btn">
+              <i class="fa-regular fa-share-from-square"></i>
+              <span>Share</span>
+            </div>
+          </div>
+          <div class="post-list-ripples">
+            <div class="post-list-ripple">
+              <div class="post-list-ripple__profile"></div>
+              <div calss="post-list-ripple__text">
+                <span class="post-list-ripple__name"></span>
+                <span class="post-list-ripple__content"></span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <nav class="nav">
