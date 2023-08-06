@@ -43,6 +43,10 @@
   margin: 10px 10px;
 }
 
+.manage-network__btns i:hover {
+  color: var(--green);
+}
+
 .add-personal-contacts {
   display: flex;
   flex-direction: column;
@@ -107,6 +111,12 @@
   border-radius: 10px;
 }
 
+.add-personal-contacts__form input:last-child:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: white;
+}
+
 .popular-pages {
   display: flex;
   flex-direction: column;
@@ -137,11 +147,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 2px 2px 2px;
   border-radius: 5px;
   width: 145px;
   height: 145px;
   margin: 5px 5px;
+}
+
+.popular-pages__items:hover {
+  box-shadow: 2px 2px 2px;
 }
 
 .popular-pages__items__header {

@@ -197,3 +197,30 @@ main {
     transform: translateY(0%);
   }
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* animation이 끝난 후에도 화면에 투명하게 남아있어 클릭이 안되서 사용
+      하지만 여전히 html은 남아있음, 완전히 제거하고 싶다면 javascript 필요
+    */
+  }
+}
+
+#splash-screen {
+  background-color: white;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  animation: hideSplashScreen 4.6s steps(1, end) forwards;
+  /* forwards => animation 끝난 후에도 마지막 조건 적용 */
+}

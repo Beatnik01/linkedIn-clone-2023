@@ -2,8 +2,10 @@
   width: 480px;
   height: 190px;
   background-color: white;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .post-input__tap {
@@ -19,6 +21,11 @@
   width: 50%;
   height: 60px;
   margin-bottom: 10px;
+}
+
+.post-input__tap div:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .post-input__reco {
@@ -50,6 +57,10 @@
   margin: 0px 10px;
 }
 
+.message-tap__user-image:hover {
+  cursor: pointer;
+}
+
 .message-tap__user-image img {
   width: 100%;
   height: 100%;
@@ -57,10 +68,19 @@
 }
 
 .message-tap__input-group input {
+  position: relative;
   font-size: 20px;
   width: 400px;
-  height: 50px;
+  height: 20px;
   border: none;
+  border-left: 3px solid var(--blue);
+  animation: blink-border 0.5s step-end infinite alternate;
+}
+
+@keyframes blink-border {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .message-tap__bottom {
@@ -80,7 +100,12 @@
   padding: 10px;
 }
 
-.message-tap_submit {
+.message-tap__btns i:hover {
+  transform: scale(1.2);
+  color: var(--green);
+}
+
+.message-tap__submit {
   background-color: var(--blue);
   opacity: 0.6;
   color: white;
@@ -93,6 +118,10 @@
   margin-right: 10px;
 }
 
+.message-tap__submit:hover {
+  background-color: var(--green);
+}
+
 .post-list {
   display: flex;
   flex-direction: column;
@@ -101,8 +130,6 @@
   width: 480px;
   height: 100vh;
   background-color: white;
-  border-radius: 5px;
-  margin-top: 10px;
 }
 
 .post-list img {
@@ -117,6 +144,12 @@
   align-items: center;
   width: 100%;
   margin-top: 10px;
+  padding-top: 10px;
+}
+
+.post-list-posted:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .post-list-profile {
@@ -179,11 +212,23 @@
 }
 
 .post-list-content__text {
+  height: 75px;
   letter-spacing: 1px;
   word-spacing: 1px;
   line-height: 1.1;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.7);
+  animation: slide 2s;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 150%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
 .post-list-content__count {
@@ -195,6 +240,11 @@
   margin-bottom: 10px;
 }
 
+.post-list-content__count span:hover {
+  font-weight: 600;
+  color: var(--blue);
+}
+
 .post-list-btns {
   display: flex;
   justify-content: space-around;
@@ -203,6 +253,33 @@
   border-top: 1px solid;
   border-bottom: 1px solid;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.post-list-btns div:hover {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.post-list-btns div:first-child i {
+  animation: likebtn 2s ease-in-out infinite;
+}
+
+@keyframes likebtn {
+  0% {
+    transform: rotate(0);
+    scale: 1;
+    border-radius: 50%;
+  }
+  50% {
+    transform: rotate(-20deg);
+    color: var(--blue);
+    scale: 1.3;
+  }
+  100% {
+    transform: rotate(0);
+    scale: 1;
+    border-radius: 50%;
+  }
 }
 
 .post-list-btns i {
