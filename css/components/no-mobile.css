@@ -25,7 +25,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 600px) and (max-height: 850px) {
+@media screen and (max-width: 700px) and (max-height: 860px) {
   #no-mobile {
     display: none;
   }
